@@ -37,12 +37,12 @@ function HomeComponent() {
           }>
             <RestoreIcon />
           </IconButton>
-          <p>History</p>
+          <p style={{ fontSize: '1.3rem', marginRight:'0.5rem' }}>History</p>
 
           <Button onClick={() => {
             localStorage.removeItem("token")
             navigate("/auth")
-          }}>
+          }} style={{ fontSize: '1.1rem', marginTop:'0.3rem' }}>
             Logout
           </Button>
         </div>
@@ -55,7 +55,7 @@ function HomeComponent() {
         <div className="leftPanel">
           <div>
             <h2>Providing Quality Video Call Just Like Quality Education</h2>
-
+            <br></br>
             <div style={{ display: 'flex', gap: "10px" }}>
 
               <TextField onChange={e => setMeetingCode(e.target.value)} id="outlined-basic" label="Meeting Code" variant="outlined" />

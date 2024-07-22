@@ -63,7 +63,7 @@ export default function History() {
 
 
                 <CardContent>
-                  <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                  <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom>
                     Code: {e.meetingCode}
                   </Typography>
 

@@ -48,7 +48,9 @@
 }
 
 .landingMainContainer .cover div[role='button']:hover {
-  background-color: #ff8a03;
+  background-color: #e36e3b;
+  box-shadow: 0 6px 8px rgba(139, 144, 149, 0.4);
+  transform: translateY(-2px);
 }
 
 .landingMainContainer .cover div[role='button'] a {
