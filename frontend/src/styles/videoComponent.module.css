@@ -8,10 +8,10 @@
 .meetUserVideo {
 
   position: absolute;
-  bottom: 10vh;
-  height: 23vh;
+  bottom: 11vh;
+  height: 22vh;
   width: auto;
-  left: 0;
+  left: 20px;
   border-radius: 20px;
 }
 
@@ -38,10 +38,10 @@
 .conferenceView video {
   width: fit-content;
   height: 30vh;
-  margin-left: -20px;
+  margin-left: 13px;
   min-height: 20vh;
   min-width: 25vw;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .chatRoom {
@@ -76,6 +76,8 @@
     left: 5px;
     border-radius: 10px;
   }
+  
+
 
   .buttonContainers {
     width: 100vw;
