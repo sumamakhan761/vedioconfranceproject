@@ -190,6 +190,7 @@ export default function VideoMeetComponent() {
     })
   }
 
+
   let getUserMedia = () => {
     if ((video && videoAvailable) || (audio && audioAvailable)) {
       navigator.mediaDevices.getUserMedia({ video: video, audio: audio })
@@ -203,9 +204,6 @@ export default function VideoMeetComponent() {
       } catch (e) { }
     }
   }
-
-
-
 
 
   let getDislayMediaSuccess = (stream) => {
@@ -378,17 +376,17 @@ export default function VideoMeetComponent() {
   let black = ({ width = 640, height = 480 } = {}) => {
     let canvas = Object.assign(document.createElement("canvas"), { width, height })
     canvas.getContext('2d').fillRect(0, 0, width, height)
-    let stream = canvas.captureStream()
+    let stream = canvas.captureStream() 
     return Object.assign(stream.getVideoTracks()[0], { enabled: false })
   }
 
   let handleVideo = () => {
     setVideo(!video);
-    // getUserMedia();
+    getUserMedia();
   }
   let handleAudio = () => {
     setAudio(!audio)
-    // getUserMedia();
+    getUserMedia();
   }
 
   useEffect(() => {
@@ -518,7 +516,7 @@ export default function VideoMeetComponent() {
                 {screen === true ? <ScreenShareIcon /> : <StopScreenShareIcon />}
               </IconButton> : <></>}
 
-            <Badge badgeContent={newMessages} max={999} color='orange'>
+            <Badge badgeContent={newMessages} max={999} color='secondary'>
               <IconButton onClick={() => setModal(!showModal)} style={{ color: "white" }}>
                 <ChatIcon />                        </IconButton>
             </Badge>
@@ -529,6 +527,7 @@ export default function VideoMeetComponent() {
           <video className={styles.meetUserVideo} ref={localVideoref} autoPlay muted></video>
 
           <div className={styles.conferenceView}>
+
             {videos.map((video) => (
               <div key={video.socketId}>
                 <video
