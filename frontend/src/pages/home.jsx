@@ -26,7 +26,7 @@ function HomeComponent() {
 
         <div style={{ display: "flex", alignItems: "center" }}>
 
-          <h2>Chlo Meeting Krain</h2>
+          <h2>Connectify</h2>
         </div>
 
         <div style={{ display: "flex", alignItems: "center" }}>
@@ -36,8 +36,9 @@ function HomeComponent() {
             }
           }>
             <RestoreIcon />
-          </IconButton>
           <p style={{ fontSize: '1.3rem', marginRight:'0.5rem' }}>History</p>
+          </IconButton>
+
 
           <Button onClick={() => {
             localStorage.removeItem("token")

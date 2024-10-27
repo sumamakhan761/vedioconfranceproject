@@ -492,13 +492,11 @@ export default function VideoMeetComponent() {
                 }) : <p>No Messages Yet</p>}
 
 
-              </div>
-
-              <div className={styles.chattingArea}>
+              <div   className={styles.chattingArea} >
                 <TextField value={message} onChange={(e) => setMessage(e.target.value)} id="outlined-basic" label="Enter Your chat" variant="outlined" />
                 <Button variant='contained' onClick={sendMessage} style={{margin : '0.5rem'}}>Send</Button>
               </div>
-
+              </div>
 
             </div>
           </div> : <></>}

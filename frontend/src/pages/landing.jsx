@@ -12,7 +12,7 @@ export default function LandingPage() {
     <div className='landingPageContainer'>
       <nav>
         <div className='navHeader'>
-          <h2>Chlo Meeting Krain</h2>
+          <h2>Connectify</h2>
         </div>
         <div className='navlist'>
 
@@ -36,7 +36,7 @@ export default function LandingPage() {
       <div className='landingMainContainer'>
         <div className='cover'>
           <h1><span style={{ color: "#FF9839" }}>Connect</span> with your loved Ones</h1>
-          <p>Cover a distance by Apna Video call</p>
+          <p>Cover a distance by Connectify</p>
           <div role='button'>
             <Link to={"/auth"}>Get Started</Link>
           </div>
