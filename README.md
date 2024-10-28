@@ -36,7 +36,9 @@ Clone the project
 
 ## Demo Video
 
-https://github.com/user-attachments/assets/e3dcc585-a8de-4031-b2b2-39f3bde5ebb9
+https://github.com/user-attachments/assets/0f9938d0-7dec-472f-ba3a-1ace4cd148f2
+
+
 
 ## Tech Stack
 
